@@ -86,7 +86,7 @@
                             return this.device.selectConfiguration(0);
                         }
                     })
-                    .then(() => device.claimInterface(0)) // Request exclusive control over interface #2.
+                    .then(() => device.claimInterface(1)) // Request exclusive control over interface #2.
                     .then(() => {
                         var canvas = createContext(pageWidth, pageHeight);
                         var ctx = canvas.getContext("2d");
